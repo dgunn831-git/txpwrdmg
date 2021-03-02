@@ -1,0 +1,568 @@
+﻿body {
+    color: #000;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+#lp-pom-box-12 {
+    left: 515px;
+    top: 35px;
+    display: block;
+    background: rgba(255,255,255,1);
+    border-style: none;
+    border-radius: 10px;
+    z-index: 1;
+    width: 382px;
+    height: 788px;
+    position: absolute;
+}
+
+#lp-pom-root {
+    display: block;
+    background: rgba(238,238,238,1);
+    border-style: none;
+    margin: auto;
+    padding-top: 0px;
+    border-radius: 0px;
+    min-width: 950px;
+    height: 1088px;
+}
+
+#lp-pom-text-13 {
+    display: block;
+    background: rgba(255,255,255,0);
+    border-style: none;
+    border-radius: 0px;
+    left: 6px;
+    top: 22px;
+    z-index: 2;
+    width: 370px;
+    height: 34px;
+    position: absolute;
+}
+
+#lp-pom-text-42 {
+    display: block;
+    background: rgba(255,255,255,0);
+    border-style: none;
+    border-radius: 0px;
+    left: 5px;
+    top: 65px;
+    z-index: 5;
+    width: 372px;
+    height: 60px;
+    position: absolute;
+}
+
+#lp-pom-text-131 {
+    display: block;
+    background: rgba(255,255,255,0);
+    border-style: none;
+    border-radius: 0px;
+    left: 14px;
+    top: 675px;
+    z-index: 6;
+    width: 353px;
+    height: 90px;
+    position: absolute;
+}
+
+#lp-pom-button-15 {
+    display: block;
+    border-style: none;
+    border-radius: 48px;
+    left: 50px;
+    top: 474px;
+    z-index: 4;
+    width: 254px;
+    height: 53px;
+    position: absolute;
+    background: rgba(8,118,6,1);
+    box-shadow: inset 0px 1px 0px #348f32, inset 0 -1px 2px #044303;
+    text-shadow: none;
+    color: #fff;
+    border-width: undefinedpx;
+    border-color: #undefined;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 400;
+    font-family: Montserrat;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+#lp-pom-block-128 {
+    display: block;
+    background: rgba(2,70,86,1);
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 9px;
+    position: relative;
+}
+
+#lp-pom-block-8 {
+    display: block;
+    background: rgba(0,0,0,0);
+    background-image: url(//d9hhrg4mnvzow.cloudfront.net/www.txpoweroutages.com/step-2/20df3d8b-1lawyer_1000000000000000000028.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-style: none none none none;
+    border-width: undefinedpx;
+    border-color: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 850px;
+    position: relative;
+}
+
+#lp-pom-block-132 {
+    display: block;
+    background: rgba(102,102,102,1);
+    border-style: none none none none;
+    border-width: undefinedpx;
+    border-color: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 229px;
+    position: relative;
+}
+
+#lp-pom-text-133 {
+    display: block;
+    background: rgba(255,255,255,0);
+    border-style: none;
+    border-radius: 0px;
+    left: 41px;
+    top: 883.5px;
+    z-index: 7;
+    width: 785px;
+    height: 171px;
+    position: absolute;
+}
+
+#lp-pom-root .lp-positioned-content {
+    top: 0px;
+    width: 950px;
+    margin-left: -475px;
+}
+
+#container_first_name {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 354px;
+    height: 44px;
+}
+
+.lp-pom-form-field .ub-input-item.single.form_elem_first_name {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 353px;
+    height: 44px;
+}
+
+#container_last_name {
+    position: absolute;
+    top: 68px;
+    left: 0px;
+    width: 354px;
+    height: 44px;
+}
+
+.lp-pom-form-field .ub-input-item.single.form_elem_last_name {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 353px;
+    height: 44px;
+}
+
+#container_state {
+    position: absolute;
+    top: 134px;
+    left: 0px;
+    width: 354px;
+    height: 45px;
+}
+
+.lp-pom-form-field .ub-input-item.single.form_elem_state {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 353px;
+    height: 44px;
+}
+
+#container_email {
+    position: absolute;
+    top: 201px;
+    left: 0px;
+    width: 354px;
+    height: 44px;
+}
+
+.lp-pom-form-field .ub-input-item.single.form_elem_email {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 353px;
+    height: 44px;
+}
+
+#container_telephone_number {
+    position: absolute;
+    top: 268px;
+    left: 0px;
+    width: 354px;
+    height: 45px;
+}
+
+.lp-pom-form-field .ub-input-item.single.form_elem_telephone_number {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 353px;
+    height: 44px;
+}
+
+#container_briefly_describe_any_other_details_important {
+    position: absolute;
+    top: 335px;
+    left: 0px;
+    width: 354px;
+    height: 125px;
+}
+
+.lp-pom-form-field .ub-input-item.single.form_elem_briefly_describe_any_other_details_important {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 353px;
+    height: 101px;
+}
+
+#label_briefly_describe_any_other_details_important {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 353px;
+    height: 16px;
+}
+
+#bus {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#acc {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#cid {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#asid {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#aid {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#platform {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#fbp {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#fbc {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#fbclid {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#eid {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#placement {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#userAgent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#device {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#did_you_or_a_loved_or_suffer_an_injury_or_damages_resulting_from_a_loss_of_electricity_during_the_february_2021_texas_winter_storm {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#which_of_the_following_best_describes_your_claim {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#_if_you_suffered_damages_to_your_home_or_business_what_is_your_estimated_value_of_losses {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+#lp-pom-button-15:hover {
+    background: rgba(6,112,5,1);
+    box-shadow: inset 0px 1px 0px #30892f, inset 0 -1px 2px #033c02;
+    color: #fff;
+}
+
+#lp-pom-button-15:active {
+    background: rgba(5,106,4,1);
+    box-shadow: inset 0px 2px 4px #000000;
+    color: #fff;
+}
+
+#lp-pom-button-15 .label {
+    margin-top: -15px;
+}
+
+#lp-pom-block-128 .lp-pom-block-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+    height: 9px;
+}
+
+#lp-pom-block-8 .lp-pom-block-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+    height: 850px;
+}
+
+#lp-pom-block-132 .lp-pom-block-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+    height: 229px;
+}
+
+#lp-pom-root-color-overlay {
+    position: absolute;
+    background: none;
+    top: 0;
+    width: 100%;
+    height: 1088px;
+    min-height: 100%;
+}
+
+#lp-pom-box-12-color-overlay {
+    position: absolute;
+    background: none;
+    border-radius: 10px;
+    height: 788px;
+    width: 382px;
+}
+
+#lp-pom-block-128-color-overlay {
+    position: absolute;
+    background: none;
+    height: 9px;
+    width: 100%;
+    ;
+}
+
+#lp-pom-block-8-color-overlay {
+    position: absolute;
+    background: rgba(0,0,0,0);
+    height: 850px;
+    width: 100%;
+    ;
+}
+
+#lp-pom-block-132-color-overlay {
+    position: absolute;
+    background: none;
+    height: 229px;
+    width: 100%;
+    ;
+}
+
+#lp-pom-form-14 {
+    display: block;
+    left: 14px;
+    top: 135px;
+    z-index: 3;
+    width: 353px;
+    height: 0px;
+    position: absolute;
+}
+
+    #lp-pom-form-14 .fields {
+        margin: -11.5px;
+    }
+
+    #lp-pom-form-14 .lp-pom-form-field {
+        position: absolute;
+    }
+
+    #lp-pom-form-14 .option {
+        position: absolute;
+    }
+
+    #lp-pom-form-14 .optionsList {
+        position: absolute;
+    }
+
+    #lp-pom-form-14 .lp-pom-form-field .single {
+        height: 44px;
+        font-size: 15px;
+        line-height: 15px;
+        padding-left: 13px;
+        padding-right: 13px;
+        flex: 1;
+    }
+
+    #lp-pom-form-14 .lp-pom-form-field select {
+        height: 42px;
+    }
+
+    #lp-pom-form-14 .lp-pom-form-field .form_elem_multi {
+        padding-top: 13px;
+        padding-bottom: 14px;
+    }
+
+    #lp-pom-form-14 .lp-pom-form-field .lp-form-label {
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17px;
+        color: #000;
+        display: block;
+        margin-bottom: 4px;
+        width: auto;
+        margin-right: 0px;
+    }
+
+        #lp-pom-form-14 .lp-pom-form-field .lp-form-label .label-style {
+            font-weight: inherit;
+            font-style: inherit;
+        }
+
+    #lp-pom-form-14 .lp-pom-form-field input[type=text], #lp-pom-form-14 .lp-pom-form-field input[type=email], #lp-pom-form-14 .lp-pom-form-field input[type=tel], #lp-pom-form-14 .lp-pom-form-field textarea, #lp-pom-form-14 .lp-pom-form-field select {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #bbbbbb;
+    }
+
+    #lp-pom-form-14 .lp-pom-form-field .opt-label {
+        font-family: arial;
+        font-weight: 400;
+        font-size: 13px;
+        color: #000;
+        line-height: 15px;
+    }
+
+        #lp-pom-form-14 .lp-pom-form-field .opt-label .label-style {
+            font-weight: inherit;
+            font-style: inherit;
+        }
+
+    #lp-pom-form-14 .lp-pom-form-field .text {
+        background-color: #fff;
+        color: #000;
+        border-radius: 5px;
+        box-shadow: inset 0px 2px 3px #dddddd;
+        -webkit-box-shadow: inset 0px 2px 3px #dddddd;
+        -moz-box-shadow: inset 0px 2px 3px #dddddd;
+    }
+
+    #lp-pom-form-14 .lp-pom-form-field #briefly_describe_any_other_details_important {
+        height: 101px;
+        line-height: 18px;
+        padding-top: 13px;
+        padding-bottom: 14px;
+    }

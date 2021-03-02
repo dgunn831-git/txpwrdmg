@@ -1,0 +1,430 @@
+﻿@media only screen and (max-width: 600px) {
+    #lp-pom-root {
+        display: block;
+        background: rgba(238,238,238,1);
+        border-style: none;
+        margin: auto;
+        padding-top: 0px;
+        border-radius: 0px;
+        min-width: 320px;
+        height: 2196px;
+    }
+
+    #lp-pom-block-8 {
+        display: block;
+        background: rgba(255,255,255,0);
+        background-image: url(//d9hhrg4mnvzow.cloudfront.net/sorry-claim.injury-check.com/cfe4f8ac-screen-shot-2018-06-25-at-11-15-50-am_117k1es0go1es0dg000028.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        width: 100%;
+        height: 1828px;
+        position: relative;
+    }
+
+    #lp-pom-text-10 {
+        display: block;
+        background: rgba(255,255,255,0);
+        border-style: none;
+        border-radius: 0px;
+        left: 17px;
+        top: 113px;
+        z-index: 1;
+        width: 286px;
+        height: 853px;
+        position: absolute;
+    }
+
+    #lp-pom-box-22 {
+        display: block;
+        background: rgba(83,118,173,1);
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ccc;
+        border-radius: 0px;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+        width: 318px;
+        height: 92px;
+        position: absolute;
+    }
+
+    #lp-pom-text-23 {
+        display: block;
+        background: rgba(255,255,255,0);
+        border-style: none;
+        border-radius: 0px;
+        left: 83px;
+        top: 13px;
+        z-index: 3;
+        width: 208px;
+        height: 88px;
+        transform: scale(0.73);
+        transform-origin: 0 0;
+        -webkit-transform: scale(0.73);
+        -webkit-transform-origin: 0 0;
+        position: absolute;
+    }
+
+    #lp-pom-box-27 {
+        display: block;
+        background: rgba(255,255,255,1);
+        border-style: solid;
+        border-width: 1px;
+        border-color: #bebebe;
+        border-radius: 33px;
+        left: 20px;
+        top: 1458px;
+        z-index: 4;
+        width: 278px;
+        height: 335px;
+        position: absolute;
+    }
+
+    #lp-pom-text-28 {
+        display: block;
+        background: rgba(255,255,255,0);
+        border-style: none;
+        border-radius: 0px;
+        left: 9px;
+        top: 9px;
+        z-index: 5;
+        width: 370px;
+        height: 61px;
+        transform: scale(0.7027027027027027);
+        transform-origin: 0 0;
+        -webkit-transform: scale(0.7027027027027027);
+        -webkit-transform-origin: 0 0;
+        position: absolute;
+    }
+
+    #lp-pom-image-31 {
+        display: block;
+        background: rgba(255,255,255,0);
+        left: 92px;
+        top: 274px;
+        z-index: 8;
+        position: absolute;
+    }
+
+    #lp-pom-text-32 {
+        display: block;
+        background: rgba(255,255,255,0);
+        border-style: none;
+        border-radius: 0px;
+        left: 17px;
+        top: 577px;
+        z-index: 9;
+        width: 286px;
+        height: 864px;
+        position: absolute;
+    }
+
+    #lp-pom-block-9 {
+        display: block;
+        background: rgba(255,255,255,1);
+        border-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        width: 100%;
+        height: 368px;
+        position: relative;
+    }
+
+    #lp-pom-button-30 {
+        display: block;
+        border-style: none;
+        border-radius: 32px;
+        left: -1px;
+        top: 101px;
+        z-index: 7;
+        width: 261px;
+        height: 70px;
+        position: absolute;
+        background: rgba(34,167,23,1);
+        box-shadow: inset 0px 1px 0px #5cc054, inset 0 -1px 2px #17740f;
+        text-shadow: none;
+        color: #fff;
+        border-width: undefinedpx;
+        border-color: #undefined;
+        font-size: 26px;
+        line-height: 31px;
+        font-weight: 600;
+        font-family: Open Sans;
+        font-style: normal;
+        text-align: center;
+        background-repeat: no-repeat;
+    }
+
+    body {
+        color: #000;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    #lp-pom-root .lp-positioned-content {
+        top: 0px;
+        width: 320px;
+        margin-left: -160px;
+    }
+
+    #lp-pom-block-8 .lp-pom-block-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
+        height: 1828px;
+    }
+
+    #lp-pom-block-9 .lp-pom-block-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
+        height: 368px;
+    }
+
+    #container_what_type_of_lawyer_do_you_need {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 260px;
+        height: 88px;
+    }
+
+    .lp-pom-form-field .ub-input-item.single.form_elem_what_type_of_lawyer_do_you_need {
+        position: absolute;
+        top: 44px;
+        left: 0px;
+        width: 260px;
+        height: 44px;
+    }
+
+    #label_what_type_of_lawyer_do_you_need {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 260px;
+        height: 40px;
+    }
+
+    #bus {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #acc {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #cid {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #asid {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #aid {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #lander_source {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #lp-pom-button-30:hover {
+        background: rgba(26,159,17,1);
+        box-shadow: inset 0px 1px 0px #52b84b, inset 0 -1px 2px #116c0b;
+        color: #fff;
+    }
+
+    #lp-pom-button-30:active {
+        background: rgba(22,150,14,1);
+        box-shadow: inset 0px 2px 4px #031602;
+        color: #fff;
+    }
+
+    #lp-pom-button-30 .label {
+        margin-top: -16px;
+    }
+
+    #lp-pom-image-31 .lp-pom-image-container {
+        border-style: none;
+        border-radius: 0px;
+        width: 93px;
+        height: 49px;
+    }
+
+        #lp-pom-image-31 .lp-pom-image-container img {
+            width: 93px;
+            height: 49px;
+        }
+
+    #lp-pom-root-color-overlay {
+        position: absolute;
+        background: none;
+        top: 0;
+        width: 100%;
+        height: 2196px;
+        min-height: 100%;
+    }
+
+    #lp-pom-block-8-color-overlay {
+        position: absolute;
+        background: rgba(255,255,255,0);
+        height: 1828px;
+        width: 100%;
+        ;
+    }
+
+    #lp-pom-block-9-color-overlay {
+        position: absolute;
+        background: none;
+        height: 368px;
+        width: 100%;
+        ;
+    }
+
+    #lp-pom-box-22-color-overlay {
+        position: absolute;
+        background: none;
+        height: 92px;
+        width: 318px;
+    }
+
+    #lp-pom-box-27-color-overlay {
+        position: absolute;
+        background: none;
+        border-radius: 32px;
+        height: 335px;
+        width: 278px;
+    }
+
+    #lp-pom-form-29 {
+        display: block;
+        left: 9px;
+        top: 81px;
+        z-index: 6;
+        width: 260px;
+        height: 0px;
+        position: absolute;
+    }
+
+        #lp-pom-form-29 .fields {
+            margin: -11.5px;
+        }
+
+        #lp-pom-form-29 .lp-pom-form-field {
+            position: absolute;
+        }
+
+        #lp-pom-form-29 .option {
+            position: absolute;
+        }
+
+        #lp-pom-form-29 .optionsList {
+            position: absolute;
+        }
+
+        #lp-pom-form-29 .lp-pom-form-field .single {
+            height: 44px;
+            font-size: 15px;
+            line-height: 15px;
+            padding-left: 13px;
+            padding-right: 13px;
+            flex: 1;
+        }
+
+        #lp-pom-form-29 .lp-pom-form-field select {
+            height: 42px;
+        }
+
+        #lp-pom-form-29 .lp-pom-form-field .form_elem_multi {
+            padding-top: 13px;
+            padding-bottom: 14px;
+        }
+
+        #lp-pom-form-29 .lp-pom-form-field .lp-form-label {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 21px;
+            color: #2a2a2a;
+            display: block;
+            margin-bottom: 4px;
+            width: auto;
+            margin-right: 0px;
+        }
+
+            #lp-pom-form-29 .lp-pom-form-field .lp-form-label .label-style {
+                font-weight: bolder;
+                font-style: inherit;
+            }
+
+        #lp-pom-form-29 .lp-pom-form-field input[type=text], #lp-pom-form-29 .lp-pom-form-field input[type=email], #lp-pom-form-29 .lp-pom-form-field input[type=tel], #lp-pom-form-29 .lp-pom-form-field textarea, #lp-pom-form-29 .lp-pom-form-field select {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #bbbbbb;
+        }
+
+        #lp-pom-form-29 .lp-pom-form-field .opt-label {
+            font-family: arial;
+            font-weight: 400;
+            font-size: 13px;
+            color: #000;
+            line-height: 15px;
+        }
+
+            #lp-pom-form-29 .lp-pom-form-field .opt-label .label-style {
+                font-weight: inherit;
+                font-style: inherit;
+            }
+
+        #lp-pom-form-29 .lp-pom-form-field .text {
+            background-color: #fff;
+            color: #000;
+            border-radius: 5px;
+            box-shadow: inset 0px 2px 3px #dddddd;
+            -webkit-box-shadow: inset 0px 2px 3px #dddddd;
+            -moz-box-shadow: inset 0px 2px 3px #dddddd;
+        }
+}
+
+@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 1.1), only screen and (max-width: 600px) and (min-resolution: 97dpi) {
+    #lp-pom-block-8 {
+        background-image: url(//d9hhrg4mnvzow.cloudfront.net/sorry-claim.injury-check.com/cfe4f8ac-screen-shot-2018-06-25-at-11-15-50-am_10000000kb1pu0gd000028.png);
+    }
+}

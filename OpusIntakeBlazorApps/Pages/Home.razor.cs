@@ -40,10 +40,10 @@ namespace OpusIntakeBlazorApps.Pages
                 _camp.PncData.CampaignAttributes.Add(new KeyValue("claimType", claimType));
                 _camp.PncData.CampaignAttributes.Add(new KeyValue("lossValue", lossValue));
 
-                UriHelper.NavigateTo("/claim/contactinfo");
+                UriHelper.NavigateTo("/contact");
             }
             else
-                UriHelper.NavigateTo("/claim/dnq");
+                UriHelper.NavigateTo("/dnq");
         }
 
         protected override void OnInitialized()

@@ -10,7 +10,7 @@ namespace OpusIntakeBlazorApps.Pages
     {
         [Inject] private ILogger<ContactInfo> _logger { get; set; }
 
-        [Parameter] public string Title { get; set; }
+        public string Title { get; set; }
 
         // Basic Lifecycle Functions
         //      There are Async versions of these        
