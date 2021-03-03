@@ -32,13 +32,13 @@ namespace OpusIntakeBlazorApps.Pages
             return ret;
         }
 
-        public void formSubmit()
+        public void FormSubmit()
         {
             if (damage == "Yes")
             {
-                _camp.PncData.CampaignAttributes.Add(new KeyValue("damage", damage));
-                _camp.PncData.CampaignAttributes.Add(new KeyValue("claimType", claimType));
-                _camp.PncData.CampaignAttributes.Add(new KeyValue("lossValue", lossValue));
+                _camp.PncData.LeadResponses.Add(new KeyValue("damage", damage));
+                _camp.PncData.LeadResponses.Add(new KeyValue("claimType", claimType));
+                _camp.PncData.LeadResponses.Add(new KeyValue("lossValue", lossValue));
 
                 UriHelper.NavigateTo("/contact");
             }
@@ -50,7 +50,7 @@ namespace OpusIntakeBlazorApps.Pages
         {
             base.OnInitialized();
             _camp.SetCampaign(CampaignName);
-            Title = _camp.Name;
+            Title = "Texas Freeze 2021: Submit your claim for damages today.";
 
         }
         protected override void OnAfterRender(bool firstRender)

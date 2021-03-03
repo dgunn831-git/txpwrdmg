@@ -25,6 +25,8 @@ namespace OpusIntakeBlazorApps.Models
             MailingAddress = new Address();
             CampaignAttributes = new List<KeyValue>();
             LeadResponses = new List<KeyValue>();
+            PhoneNumber = new Phone();
+            Email = new Email();
         }
     }
 

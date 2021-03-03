@@ -1,0 +1,9 @@
+﻿<div class="lp-pom-form-field drop-down" id="container_@Name">
+    <InputSelect id="@Name" name="@Name" class="@classString" @bind-Value="@BindValue">
+        <option value="">@PlaceHolder</option>
+        @foreach (var item in DataSource)
+        {
+            <option value="@item.Key">@item.Value</option>
+        }
+    </InputSelect>
+</div>

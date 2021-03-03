@@ -42,9 +42,22 @@ a, .btn-link {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+.blazored-modal{
+    max-width:550px;
+}
+
+.blazored-modal-title {
+    font-size: 22pt;
+    font-weight: bold;
+}
+.modal-footer > button {
+    padding: 3px 14px;
+    border-radius: 5px;
+}

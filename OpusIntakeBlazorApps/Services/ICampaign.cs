@@ -8,6 +8,7 @@ namespace OpusIntakeBlazorApps.Services
 {
     public interface ICampaign
     {
+        public bool Submitted { get; set; }
         public string Name { get; set; }
         public Lead PncData { get; set; }
 
