@@ -26,7 +26,9 @@ namespace OpusIntakeBlazorApps.Services
             if (!string.IsNullOrEmpty(campaignName))
                 Name = campaignName;
             else
-                Name = "Opus Intake Form";
+                Name = "OpusLeadForm";
+
+            PncData.AccountName = Name;
         }
     }
 }

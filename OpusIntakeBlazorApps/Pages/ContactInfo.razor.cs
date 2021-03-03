@@ -36,7 +36,7 @@ namespace OpusIntakeBlazorApps.Pages
             var opts = new ModalOptions() { Animation = ModalAnimation.FadeIn(1), HideCloseButton = true, DisableBackgroundCancel = true  };
             var m = modal.Show<Confirmation>("Thank you for your submission", opts);
 
-            var response = await http.PostAsJsonAsync("http://localhost:44386/import/opuspost", campaign.PncData);
+            var response = await http.PostAsJsonAsync("https://api.opusintake.com/import/opuspost", campaign.PncData);
             campaign.FormUrl = await response.Content.ReadAsStringAsync();
             campaign.Submitted = true;
             

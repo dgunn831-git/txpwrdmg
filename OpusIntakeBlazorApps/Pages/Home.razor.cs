@@ -49,12 +49,12 @@ namespace OpusIntakeBlazorApps.Pages
         protected override void OnInitialized()
         {
             base.OnInitialized();
-            _camp.SetCampaign(CampaignName);
             Title = "Texas Freeze 2021: Submit your claim for damages today.";
 
         }
         protected override void OnAfterRender(bool firstRender)
         {
+            _camp.SetCampaign(CampaignName);
             base.OnAfterRender(firstRender);
         }
     }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace OpusIntakeBlazorApps.Models
 {
-    public class Lead : LeadCampaignDetail
+    public class Lead
     {
         public Guid OpusLeadId { get; set; }
         public string CampaignId { get; set; }
@@ -18,6 +18,12 @@ namespace OpusIntakeBlazorApps.Models
         public DateTime DateOfBirth { get; set; }
         public string SSN { get; set; }
         public Address MailingAddress { get; set; }
+        public string AccountName { get; set; }
+        public string CampaignName { get; set; }
+        public DateTime CampaignStart { get; set; }
+
+        public List<KeyValue> CampaignAttributes { get; set; }
+        public List<KeyValue> LeadResponses { get; set; }
 
         public Lead()
         {
@@ -28,16 +34,6 @@ namespace OpusIntakeBlazorApps.Models
             PhoneNumber = new Phone();
             Email = new Email();
         }
-    }
-
-    public class LeadCampaignDetail
-    {
-        public string AccountName { get; set; }
-        public string CampaignName { get; set; }
-        public DateTime CampaignStart { get; set; }
-
-        public List<KeyValue> CampaignAttributes { get; set; }
-        public List<KeyValue> LeadResponses { get; set; }
     }
 
     public class KeyValue
