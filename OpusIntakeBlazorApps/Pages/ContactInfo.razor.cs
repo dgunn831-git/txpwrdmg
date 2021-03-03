@@ -28,13 +28,21 @@ namespace OpusIntakeBlazorApps.Pages
         private string phonePattern = @"^(\+?1[ -]?)?\(?[2-9]\d\d\)?[ -]?[2-9]\d\d[ -]?\d{4}$";
         private string otherDetails { get; set; }
         
-        public void FormSubmit()
+        public async void FormSubmit()
         {
             campaign.PncData.LeadResponses.Add(new KeyValue("other_detials", otherDetails));
             campaign.PncData.CampaignName = "OpusIntakeForm";
             campaign.Submitted = false;
             var opts = new ModalOptions() { Animation = ModalAnimation.FadeIn(1), HideCloseButton = true, DisableBackgroundCancel = true  };
             var m = modal.Show<Confirmation>("Thank you for your submission", opts);
+
+            var response = await http.PostAsJsonAsync("http://localhost:44386/import/opuspost", campaign.PncData);
+            campaign.FormUrl = await response.Content.ReadAsStringAsync();
+            campaign.Submitted = true;
+            
+            m.Close();
+
+            modal.Show<Confirmation>("Please continue", opts);
         }
 
         // Basic Lifecycle Functions

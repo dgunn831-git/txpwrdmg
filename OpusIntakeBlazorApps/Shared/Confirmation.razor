@@ -1,5 +1,11 @@
 ﻿    <div class="modal-body">
-        <p>We are preparing your information form so that you may provide a brief overview of your experiences relating to the damages and hardships caused by the Texas Power outage.<br /><br /></p>
-        <p>Please continue to this overview and do what you can at this point in time to GET STARTED so that you can get the best recovery for damages possible.<br /><br /></p>
-        <p>We look forward to assisting you in the process and we will be available to help.<br /><br /></p>
+        @if (!campaign.Submitted)
+        {<p>Please wait a moment while we prepare your information form so that you may provide a brief overview of your experiences relating to the damages and hardships caused by the Texas Power outage.<br /><br /></p>}
+        else
+        {<p>Please click the button below.  You will be given the ability to give us more details about your case so that you can get the best recovery for damages possible.<br /><br /></p>
+        <p>We look forward to assisting you in the process and we will be available to help.<br /><br /></p>}
+    </div>
+    <div class="modal-footer">
+        @if (campaign.Submitted)
+        {<button type="submit" class="btn btn-primary" @onclick="GoToForm">Continue</button>}
     </div>

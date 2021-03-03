@@ -9,8 +9,6 @@ namespace OpusIntakeBlazorApps.Services
 {
     public class Campaign : ICampaign
     {
-        private bool submitted;
-
         [Inject] public IMessageService message { get; set; }
 
         public Campaign()
@@ -20,17 +18,8 @@ namespace OpusIntakeBlazorApps.Services
 
         public string Name { get; set; }
         public Lead PncData { get; set; }
-        public bool Submitted 
-        { 
-            get => submitted;
-            set 
-            {
-                if (value)
-                    message.SendMessage("ready");
-                
-                submitted = value;
-            }
-        }
+        public bool Submitted { get; set; }
+        public string FormUrl { get; set; }
 
         public void SetCampaign(string campaignName)
         {

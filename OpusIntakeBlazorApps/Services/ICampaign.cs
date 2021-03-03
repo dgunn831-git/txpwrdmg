@@ -11,6 +11,7 @@ namespace OpusIntakeBlazorApps.Services
         public bool Submitted { get; set; }
         public string Name { get; set; }
         public Lead PncData { get; set; }
+        public string FormUrl { get; set; }
 
         public void SetCampaign(string campaignName);
     }
