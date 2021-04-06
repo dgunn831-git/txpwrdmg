@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/desktop.css" rel="stylesheet" type="text/css" data-page-type="main_desktop" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" data-page-type="main_mobile" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var cid = "";
+        var q = location.href.split('?')[1];
+        var params = q.split('&');
+        for (var p = 0; p < params.length; p++) {
+            keyval = params[p].split('=');
+            if (keyval[0] == "cid") {
+                cid = keyval[1];
+            }
+        }
+
+        function RegisterUser(e) {
+            var s = e.attributes["data-session"].value;
+            var url = 'http://localhost:44386/TownHall/RegisterUser?cid=' + cid + '&s=' + s;
+            $.get(url);
+        }
+    </script>
+    <title>Texas Power Failure Town Hall Meeting</title>
+</head>
+  <body>
+  <div id="header" class="d-flex flex-row p-2">
+	  <div id="header-content">
+		<div class="p-2 d-inline" id="head-logo"><img src="images/legal_assist_logo.png" width="224" height="71" class="lag-logo img-fluid rounded"></div>
+		<div class="p-2 d-inline text-white" id="head-title">Texas Power Failure Town Hall Meeting</div>
+	  </div>
+  </div>
+  <div id="block-160"></div>
+	  <div id="content">
+		  <div id="main-dialog">
+			<h4>Power Failure Webinar Registration</h4>
+			<p>Please select the Town Hall you would like to attend.  You will receive reminder emails, tips for attending, and opportunities to invite others.  We look forward to seeing you there.</p>
+			<p>Upcoming Events</p>
+			<p>Texas Power Failure Town Hall</p>
+			  <p>Tuesday, April 6th 2021 - 3:45 PM (EDT)</p>
+			  <button class="btn btn-primary" onClick="RegisterUser(this)" data-session="5da90a10-1a96-4b87-9828-36a426c2403e">Click Here to Register</button>
+		  </div>
+	  </div>  
+  <div id="footer" class="container-fluid">
+	 <p>&copy; 2021 Legal Assist Group</p>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
