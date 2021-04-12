@@ -13,9 +13,30 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		var cid = localStorage.getItem("cid");
+		var data = {};
+        $.get('https://api.opusintake.com/TownHall/GetPncStatus?cid=' + cid, function (response) {
+            data = response;
 
+			$("#loading").attr("style", "display:none;");
 
-
+			if (data.status != "IntakeComplete") {
+				if (data.requestContract) {
+					$("#option2").attr("style", "display:block;");
+				}
+				else {
+                    $("#option1").attr("style", "display:block;");
+				}
+			}
+		});
+		function GoToForm() {
+			location = data.formLink;
+        }
+		function ResendContract() {
+            $.get('https://api.opusintake.com/TownHall/ResendContract?cid=' + cid, function () {
+                $("#contractSent").attr("style", "display:block;");
+                $("#option2").attr("style", "display:none;");
+			});
+        }
 	</script>
 	<title>Texas Power Failure Town Hall Meeting</title>
 </head>
@@ -30,28 +51,34 @@
   <div id="content">
 	  <div id="main-dialog">
 		<h4>Thanks for attending!</h4>
-		  <div id="option1" style="display:none;">
+		  <div id="option1" class="hide">
 		  <div class="thanks">
 			<p>Once you complete the application, we will get all your information over to the law firm to get you started with your claim.</p><p>You will be on board, your rights for all possible recoveries will be protected and we will continue to keep you abreast of all developments as the litigation proceeds.</p>			
 			</div>
 		  <div id="button-div">
-		  	<button class="btn btn-success">Finish Signing-up Right Now</button>
+		  	<button class="btn btn-success" onclick="GoToForm()">Finish Signing-up Right Now</button>
 		  </div>
 		  <p><br/>We look forward to working with you.</p>
 		  </div>
-		  <div id="option2" style="display:none;">
+		  <div id="option2" class="hide">
 		  <div class="thanks">
 			<p>Once you sign your contract and finish the application, we will get all your information over to the law firm to get you started with your claim.  You will be on board, your rights for all possible recoveries will be fully protected and we can continue to keep you abreast of all developments as the litigation proceeds.</p>			
 			</div>
 		  <div id="button-div">
-		  	<button class="btn btn-success">Finish Signing-up Right Now</button>
+		  	<button class="btn btn-success" onclick="ResendContract()">Finish Signing-up Right Now</button>
 		  </div>
 		  <p><br/>We look forward to working with you.</p>
 		  </div>
-		  <div id="option3">
+		  <div id="option3" class="hide">
 		  <div class="thanks">
 			<p>Thanks for signing up and Welcome aboard.  We will get all your information over to the law firm to get you started with your claim.  You are on board, your rights for recoveries are now fully protected and the law firm will be sending a Welcome Letter and continue to keep you abreast of all developments as the litigation proceeds.<br><br>Thank You</p>			
 			</div>
+		  </div>
+		  <div id="loading">
+              <h5>Loading...</h5>
+		  </div>
+		  <div id="contractSent" class="hide">
+			  <p>Your contract has been sent.<br />Please check your SMS and Email for the link to your contract.</p>
 		  </div>
 	  </div>
   </div>
@@ -61,7 +88,6 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
