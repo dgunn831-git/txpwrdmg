@@ -23,14 +23,11 @@
         }
         var selected = "";
 
-        var sessions = {}; 
         $.get('https://api.opusintake.com/TownHall/GetSessions?eid=d57451ad-6145-4243-b80a-14ca63e2b973', function (response) {
-            sessions = response.data;
             var u = $("#sessions");
             u.html("");
-            for (var i = 0; i < response.data.length; i++) {
-                var attr = response.data[i].attributes;
-                u.append('<li><input type="radio" name="session" onclick="SetSession(this)" value="' + response.data[i].id + '" />&nbsp;&nbsp;' + convertTimestamp(attr.estimated_started_at) + '</li>');
+            for (var i = 0; i < response.length; i++) {
+                u.append('<li><input type="radio" name="session" onclick="SetSession(this)" value="' + response[i].sessionId + '" />&nbsp;&nbsp;' + convertTimestamp(response[i].startTimeUnix) + '</li>');
             }
         });
 

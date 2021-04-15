@@ -24,9 +24,12 @@
 					$("#option2").attr("style", "display:block;");
 				}
 				else {
-                    $("#option1").attr("style", "display:block;");
+					$("#option1").attr("style", "display:block;");
 				}
 			}
+			else {
+                $("#option3").attr("style", "display:block;");
+            }
 		});
 		function GoToForm() {
 			location = data.formLink;
@@ -51,31 +54,33 @@
   <div id="content">
 	  <div id="main-dialog">
 		<h4>Thanks for attending!</h4>
-		  <div id="option1" class="hide">
-		  <div class="thanks">
-			<p>Once you complete the application, we will get all your information over to the law firm to get you started with your claim.</p><p>You will be on board, your rights for all possible recoveries will be protected and we will continue to keep you abreast of all developments as the litigation proceeds.</p>			
-			</div>
-		  <div id="button-div">
-		  	<button class="btn btn-success" onclick="GoToForm()">Finish Signing-up Right Now</button>
-		  </div>
-		  <p><br/>We look forward to working with you.</p>
-		  </div>
-		  <div id="option2" class="hide">
-		  <div class="thanks">
-			<p>Once you sign your contract and finish the application, we will get all your information over to the law firm to get you started with your claim.  You will be on board, your rights for all possible recoveries will be fully protected and we can continue to keep you abreast of all developments as the litigation proceeds.</p>			
-			</div>
-		  <div id="button-div">
-		  	<button class="btn btn-success" onclick="ResendContract()">Finish Signing-up Right Now</button>
-		  </div>
-		  <p><br/>We look forward to working with you.</p>
-		  </div>
+        <div id="option1" class="hide">
+            <div id="button-div">
+                <button class="btn btn-success" onclick="GoToForm()">Finish Signing-up Right Now</button>
+            </div>
+            <div class="thanks">
+                <p>Once you complete the application, we will get all your information over to the law firm to get you started with your claim.</p><p>You will be on board, your rights for all possible recoveries will be protected and we will continue to keep you abreast of all developments as the litigation proceeds.</p>
+            </div>
+            <p><br />We look forward to working with you.</p>
+        </div>
+          <div id="option2" class="hide">
+              <div id="button-div">
+                  <button class="btn btn-success" onclick="ResendContract()">Finish Signing-up Right Now</button>
+              </div>
+              <div class="thanks">
+                  <p>Once you sign your contract and finish the application, we will get all your information over to the law firm to get you started with your claim.  You will be on board, your rights for all possible recoveries will be fully protected and we can continue to keep you abreast of all developments as the litigation proceeds.</p>
+              </div>
+              <p><br />We look forward to working with you.</p>
+          </div>
 		  <div id="option3" class="hide">
 		  <div class="thanks">
 			<p>Thanks for signing up and Welcome aboard.  We will get all your information over to the law firm to get you started with your claim.  You are on board, your rights for recoveries are now fully protected and the law firm will be sending a Welcome Letter and continue to keep you abreast of all developments as the litigation proceeds.<br><br>Thank You</p>			
 			</div>
 		  </div>
 		  <div id="loading">
-              <h5>Loading...</h5>
+              <p><br />Please stand by --</p>
+			  <p>As we are retrieving <i>your</i> specifc information for next steps...</p>
+
 		  </div>
 		  <div id="contractSent" class="hide">
 			  <p>Your contract has been sent.<br />Please check your SMS and Email for the link to your contract.</p>
