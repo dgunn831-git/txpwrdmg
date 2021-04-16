@@ -32,6 +32,7 @@
             }
 		});
 		function GoToForm() {
+            $.get('https://api.opusintake.com/TownHall/ContinueClicked?cid=' + cid);
 			location = data.formLink;
         }
 		function ResendContract() {
@@ -83,7 +84,7 @@
 
 		  </div>
 		  <div id="contractSent" class="hide">
-			  <p>Your contract has been sent.<br />Please check your SMS and Email for the link to your contract.</p>
+			  <p>The link to your e-Sign agreement has been sent to you as a text and email.<br /><br />NOTE:  Most people find it easier to complete on a laptop or computer rather than a mobile device.</p>
 		  </div>
 	  </div>
   </div>
