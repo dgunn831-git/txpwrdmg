@@ -7,3 +7,7 @@ li{
 .hide{
 	display:none;
 }
+.event-full{
+	color:crimson;
+	font-weight:bold;
+}

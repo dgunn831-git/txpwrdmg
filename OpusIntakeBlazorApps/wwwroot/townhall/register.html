@@ -27,7 +27,11 @@
             var u = $("#sessions");
             u.html("");
             for (var i = 0; i < response.length; i++) {
-                u.append('<li><input type="radio" name="session" onclick="SetSession(this)" value="' + response[i].sessionId + '" />&nbsp;&nbsp;' + convertTimestamp(response[i].startTimeUnix) + '</li>');
+                if (response[i].eventFull) {
+                    u.append('<li>' + convertTimestamp(response[i].startTimeUnix) + ' - <em class="event-full">Event Full</em></li>');
+                } else {
+                    u.append('<li><input type="radio" name="session" onclick="SetSession(this)" value="' + response[i].sessionId + '" />&nbsp;&nbsp;' + convertTimestamp(response[i].startTimeUnix) + '</li>');
+                }
             }
         });
 
