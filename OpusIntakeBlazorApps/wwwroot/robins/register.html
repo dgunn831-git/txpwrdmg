@@ -1,0 +1,119 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="../townhall/css/app.css" rel="stylesheet" />
+    <link href="../townhall/css/desktop.css" rel="stylesheet" type="text/css" data-page-type="main_desktop" />
+    <link href="../townhall/css/mobile.css" rel="stylesheet" type="text/css" data-page-type="main_mobile" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var cid = "";
+        var q = location.href.split('?')[1];
+        var params = q.split('&');
+        for (var p = 0; p < params.length; p++) {
+            keyval = params[p].split('=');
+            if (keyval[0] == "cid") {
+                cid = keyval[1];
+            }
+        }
+        var selected = "";
+
+        $.get('https://api.opusintake.com/TownHall/GetSessions?eid=78adb955-6435-4f76-9341-e015ea5548dc', function (response) {
+            var u = $("#sessions");
+            u.html("");
+            for (var i = 0; i < response.length; i++) {
+                if (response[i].eventFull) {
+                    u.append('<li>' + convertTimestamp(response[i].startTimeUnix) + ' - <em class="event-full">Event Full</em></li>');
+                } else {
+                    u.append('<li><input type="radio" name="session" onclick="SetSession(this)" value="' + response[i].sessionId + '" />&nbsp;&nbsp;' + convertTimestamp(response[i].startTimeUnix) + '</li>');
+                }
+            }
+        });
+
+        function SetSession(e) {
+            selected = e.value;
+        }
+        function RegisterUser(e) {
+            if (selected == '') {
+                alert('Please select a session');
+                return;
+            }
+                
+            var url = 'https://api.opusintake.com/TownHall/RegisterUser?cid=' + cid + '&s=' + selected;
+            $.get(url, function (response) {
+                if (response) {
+                    var r = $("#reg-div");
+                    r.html("");
+                    r.append("<p>Thank you for registering</p><p>Please look for further updates from our team prior to the event.</p>");
+                }
+            });
+        }
+        function convertTimestamp(timestamp) {
+            var d = new Date(timestamp * 1000),	// Convert the passed timestamp to milliseconds
+                yyyy = d.getFullYear(),
+                mm = ('0' + (d.getMonth() + 1)).slice(-2),	// Months are zero based. Add leading 0.
+                dd = ('0' + d.getDate()).slice(-2),			// Add leading 0.
+                hh = d.getHours(),
+                h = hh,
+                min = ('0' + d.getMinutes()).slice(-2),		// Add leading 0.
+                ampm = 'AM',
+                time;
+
+            if (hh > 12) {
+                h = hh - 12;
+                ampm = 'PM';
+            } else if (hh === 12) {
+                h = 12;
+                ampm = 'PM';
+            } else if (hh == 0) {
+                h = 12;
+            }
+
+            var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var timeOptions = { timeZone: 'UTC' };
+
+            //Tuesday, April 6th 2021 - 11:00 AM (EDT)
+            // ie: 2013-02-18, 8:35 AM	
+            var offset = new Date(d.getTime() - d.getTimezoneOffset()*60*1000);
+            //d = d - offset;
+            return offset.toLocaleDateString('en-US', dateOptions) + ' @ ' + offset.toLocaleTimeString('en-US', timeOptions);
+        }
+    </script>
+    <title>Texas Power Failure Town Hall Meeting</title>
+</head>
+  <body>
+  <div id="header" class="d-flex flex-row p-2">
+	  <div id="header-content">
+		<div class="p-2 d-inline" id="head-logo"><img src="../townhall/images/legal_assist_logo.png" width="224" height="71" class="lag-logo img-fluid rounded"></div>
+		<div class="p-2 d-inline text-white" id="head-title">Texas Power Failure Town Hall Meeting</div>
+	  </div>
+  </div>
+  <div id="block-160"></div>
+	  <div id="content">
+		  <div id="main-dialog">
+			<h4>Power Failure Webinar Registration</h4>
+			<p>Please select the Town Hall you would like to attend.  You will receive reminder emails, tips for attending, and opportunities to invite others.  We look forward to seeing you there.</p>
+			<h5>Upcoming Events</h5>
+            <div id="reg-div">
+                <ul id="sessions" style="list-style:none">
+                    <li>Loading...</li>
+                </ul>
+                <button class="btn btn-primary" onClick="RegisterUser(this)">Click Here to Register</button>
+            </div>
+		  </div>
+	  </div>  
+  <div id="footer" class="container-fluid">
+	 <p>&copy; 2021 Legal Assist Group</p>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
