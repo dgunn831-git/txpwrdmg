@@ -24,10 +24,15 @@
             }
         }
 
-		var url = "";
+        var url = "";
+        $(document).ready(function () {
+            $("#enterBtn").attr("disabled", true);
 
-        $.get('https://api.opusintake.com/TownHall/GetSessionLink?cid=' + cid + "&eid=d57451ad-6145-4243-b80a-14ca63e2b973", function (response) {
-            url = response;
+            $.get('https://api.opusintake.com/TownHall/GetSessionLink?cid=' + cid + "&eid=78adb955-6435-4f76-9341-e015ea5548dc", function (response) {
+                url = response;
+                $("#enterBtn").attr("disabled", false);
+                $("#enterBtn").html("Go to Town Hall Meeting");
+            });
         });
 
 		function GoToWebinar() {
@@ -49,7 +54,7 @@
       <div id="main-dialog">
           <h4>About The Town Hall Meeting</h4>
           <div id="button-div">
-              <button class="btn btn-success" onclick="GoToWebinar()">Go to Town Hall Meeting</button>
+              <button id="enterBtn" class="btn btn-success" onclick="GoToWebinar()">Loading...</button>
           </div>
           <div class="lobby">
               <p>Thanks for coming.</p>
