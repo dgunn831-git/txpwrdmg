@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="lp-element lp-pom-form has-axis" id="lp-pom-form-61">
-                    <form method="POST" action="">
+                    <form method="POST" action="" onsubmit="return SubmitForm()">
                         <div class="fields">
                             <div class="lp-pom-form-field single-line-text" id="container_first_name">
                                 <input id="first_name" name="first_name" type="text" class="ub-input-item single text form_elem_first_name" placeholder="First Name" required="" />
@@ -59,12 +59,12 @@
                                 <input id="telephone_number" name="telephone_number" type="tel" class="ub-input-item single text form_elem_telephone_number" placeholder="Telephone Number" required="" pattern="^(\+?1[ -]?)?\(?[2-9]\d\d\)?[ -]?[2-9]\d\d[ -]?\d{4}$" />
                             </div>
                             <div class="lp-pom-form-field single-line-text" id="container_session">
-                                <select name="session" id="session_select" class="ub-input-item single text form_elem_session" required>
+                                <select name="session" id="session_select" class="ub-input-item single text form_elem_session" required="">
                                     <option selected disabled value="">Please Select a Session Time</option>
                                     <option disabled value=""></option>
                                 </select>
                             </div>
-                            <button class="lp-element lp-pom-button" id="lp-pom-button-62" type="button" onclick="SubmitForm()">
+                            <button class="lp-element lp-pom-button" id="lp-pom-button-62" type="submit">
                                 <span class="label">
                                     <strong>GET INVITE</strong>
                                 </span>
@@ -595,6 +595,7 @@
         });
 
         function SubmitForm() {
+            $("#lp-pom-button-62").attr("disabled", "disabled");
             var f = document.querySelector('form');
 
             var data = {};
@@ -632,7 +633,7 @@
                     $('#signup-form').addClass("hide");
                 }
 
-                return true;
+                return false;
             });
 
             return false;
