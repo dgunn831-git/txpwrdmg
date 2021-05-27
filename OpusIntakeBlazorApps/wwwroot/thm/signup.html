@@ -550,33 +550,12 @@
     <script src="/js/lazysizes.min.js" async=""></script>
     <script>
         function convertTimestamp(timestamp) {
-            var d = new Date(timestamp * 1000),	// Convert the passed timestamp to milliseconds
-                yyyy = d.getFullYear(),
-                mm = ('0' + (d.getMonth() + 1)).slice(-2),	// Months are zero based. Add leading 0.
-                dd = ('0' + d.getDate()).slice(-2),			// Add leading 0.
-                hh = d.getHours(),
-                h = hh,
-                min = ('0' + d.getMinutes()).slice(-2),		// Add leading 0.
-                ampm = 'AM',
-                time;
+            var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }; //Tuesday, April 6, 2021
+            var timeOptions = { timeZone: 'UTC', hour: '2-digit', minute: '2-digit' }; //11:00 AM
 
-            if (hh > 12) {
-                h = hh - 12;
-                ampm = 'PM';
-            } else if (hh === 12) {
-                h = 12;
-                ampm = 'PM';
-            } else if (hh == 0) {
-                h = 12;
-            }
+            var d = new Date(timestamp * 1000);
+            var offset = new Date(d.getTime() - d.getTimezoneOffset() * 60 * 1000); //time based on browser location
 
-            var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            var timeOptions = { timeZone: 'UTC', hour: '2-digit', minute: '2-digit' };
-
-            //Tuesday, April 6th 2021 - 11:00 AM (EDT)
-            // ie: 2013-02-18, 8:35 AM	
-            var offset = new Date(d.getTime() - d.getTimezoneOffset() * 60 * 1000);
-            //d = d - offset;
             return offset.toLocaleDateString('en-US', dateOptions) + ' @ ' + offset.toLocaleTimeString('en-US', timeOptions);
         }
         $(document).ready(function () {

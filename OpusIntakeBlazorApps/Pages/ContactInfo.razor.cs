@@ -31,7 +31,9 @@ namespace OpusIntakeBlazorApps.Pages
         public async void FormSubmit()
         {
             campaign.PncData.LeadResponses.Add(new KeyValue("other_detials", otherDetails));
-            campaign.PncData.CampaignName = "OpusIntakeForm";
+            campaign.PncData.AccountName = "FriendsAndFamily";
+            campaign.PncData.Assignee = "Texas Freeze Power Failure";
+            campaign.PncData.LeadOwner = "OPUS Intake";
             campaign.Submitted = false;
             var opts = new ModalOptions() { Animation = ModalAnimation.FadeIn(1), HideCloseButton = true, DisableBackgroundCancel = true  };
             var m = modal.Show<Confirmation>("Thank you for your submission", opts);

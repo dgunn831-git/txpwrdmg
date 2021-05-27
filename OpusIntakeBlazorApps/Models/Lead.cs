@@ -21,6 +21,8 @@ namespace OpusIntakeBlazorApps.Models
         public string AccountName { get; set; }
         public string CampaignName { get; set; }
         public DateTime CampaignStart { get; set; }
+        public string Assignee { get; set; }
+        public string LeadOwner { get; set; }
 
         public List<KeyValue> CampaignAttributes { get; set; }
         public List<KeyValue> LeadResponses { get; set; }

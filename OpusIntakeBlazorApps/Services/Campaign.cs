@@ -28,7 +28,7 @@ namespace OpusIntakeBlazorApps.Services
             else
                 Name = "BGBCA0000";
 
-            PncData.AccountName = Name;
+            PncData.CampaignName = Name;
         }
     }
 }

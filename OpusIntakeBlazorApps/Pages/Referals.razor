@@ -1,0 +1,515 @@
+﻿@page "/"
+@page "/{CampaignName}"
+@layout BlankLayout
+
+<div class="lp-element lp-pom-root" id="lp-pom-root">
+    <div id="lp-pom-root-color-overlay"></div>
+    <div class="lp-positioned-content">
+        <div id="signup-form">
+			<div class="lp-element lp-pom-box" id="lp-pom-box-14">
+                <div id="lp-pom-box-14-color-overlay"></div>
+                <div class="lp-element lp-pom-box" id="lp-pom-box-21">
+                    <div id="lp-pom-box-21-color-overlay"></div>
+                    <div class="lp-element lp-pom-text nlh" id="lp-pom-text-20">
+                        <p class="lplh-29" style="text-align: center; line-height: 34px;">
+                            <span style="color: rgb(255, 247, 136); font-family: merriweather;">
+                                <span style="font-size: 27px;">FREE CLAIM REVIEW</span>
+                            </span>
+                        </p>
+                        <p class="lplh-29" style="text-align: center; line-height: 0px;">
+                            <span style="font-size: 20px;">
+                                <span style="color: rgb(255, 247, 136); font-family: merriweather;">Get Help Today!</span>
+                            </span>
+                        </p>
+                        <p class="lplh-29" style="text-align: center; line-height: 34px;">
+                            <br />
+                        </p>
+                    </div>
+                </div>
+                <div class="lp-element lp-pom-form has-axis" id="lp-pom-form-61">
+                    <EditForm Model="lead" OnSubmit="FormSubmit">
+                        <div class="fields">
+                            <div class="lp-pom-form-field drop-down" id="container_damage">
+                                <label class="main lp-form-label" for="damage" id="label_damage">
+                                    <span class="label-style">Did you or a loved or suffer an injury or damages resulting from a loss of electricity during the February 2021 Texas winter storm?&nbsp;*</span>
+                                </label>
+                                <InputSelect AdditionalAttributes="@GetAttributes("damage")" TValue="string" @bind-Value="damage">
+                                    <option>Select</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </InputSelect>
+                            </div>
+                            <div class="lp-pom-form-field drop-down" id="container_claimType">
+                                <label class="main lp-form-label" for="claimType" id="label_claimType">
+                                    <span class="label-style">Which of the following best describes your claim?&nbsp;*</span>
+                                </label>
+                                <InputSelect AdditionalAttributes="@GetAttributes("claimType")" TValue="string" @bind-Value="claimType">
+                                    <option value="">Select</option>
+                                    <option value="Personal Injury or death">Personal Injury or death</option>
+                                    <option value="Property damage to your home">Property damage to your home</option>
+                                    <option value="Property damage to commercial structure">Property damage to commercial structure</option>
+                                    <option value="Business interruption to your business">Business interruption to your business</option>
+                                    <option value="No damage or injury">No damage or injury</option>
+                                </InputSelect>
+                            </div>
+                            <div class="lp-pom-form-field drop-down" id="container_losses">
+                                <label class="main lp-form-label" for="losses" id="label_losses">
+                                    <span class="label-style"> If you suffered damages to your home or business, what is your estimated value of losses?&nbsp;*</span>
+                                </label>
+                                <InputSelect AdditionalAttributes="@GetAttributes("losses")" TValue="string" @bind-Value="lossValue">
+                                    <option value="">Select</option>
+                                    <option value="Under $10,000">Under $10,000</option>
+                                    <option value="$11,000-$20,000">$11,000-$20,000</option>
+                                    <option value="$21,000-$30,000">$21,000-$30,000</option>
+                                    <option value="$31,000-$50,000">$31,000-$50,000</option>
+                                    <option value="More then $50,000">More then $50,000</option>
+                                </InputSelect>
+                            </div>
+                        </div>
+                        <button class="lp-element lp-pom-button" id="lp-pom-button-62" type="submit">GET STARTED</button>
+                    </EditForm>
+                </div>
+            </div>
+		</div>
+        
+        <div class="lp-element lp-pom-image" id="lp-pom-image-16">
+            <div class="lp-pom-image-container" style="overflow: hidden;">
+                <img class="lazyload" data-src="/images/bpeywb-education-skills_1000000000000000000028.png" />
+            </div>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-24">
+            <div class="lplh-32">
+                <span style="font-size:21px;">
+                    <span style="font-family:lato;">
+                        <span style="color: rgb(159, 75, 73);">
+                            <strong>Texas lawmakers are calling for investigations into the state’s power grid manager and are demanding resignations from some of its top leadership.</strong>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-26">
+            <div class="lplh-29" style="text-align: center;">
+                <span style="font-size:22px;">
+                    <span style="color: rgb(36, 53, 84);">
+                        <strong>
+                            <span style="font-family: merriweather;">Fill out the form or&nbsp;</span>
+                        </strong>
+                    </span>
+                </span>
+                <span style="color: rgb(36, 53, 84);">
+                    <br />
+                </span>
+                <span style="font-size:22px;">
+                    <span style="color: rgb(36, 53, 84);">
+                        <strong>
+                            <span style="font-family: merriweather;">call us</span>
+                        </strong>
+                    </span>
+                </span>
+            </div>
+            <blockquote>
+                <div class="lplh-29" style="text-align: center;">
+                    <span style="font-size: 18px;">
+                        <span style="font-family: lato; color: rgb(110, 110, 110);">If your business has hail damage during the May storms, we are here to help!</span>
+                    </span>
+                </div>
+            </blockquote>
+            <div>&nbsp;</div>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-27">
+            <div class="lplh-29" style="text-align: center;">
+                <span style="font-size:22px;">
+                    <span style="color: rgb(36, 53, 84);">
+                        <strong>
+                            <span style="font-family: merriweather;">Free consultation</span>
+                        </strong>
+                    </span>
+                </span>
+            </div>
+            <p>
+                <span style="color: rgb(36, 53, 84);">
+                    <br />
+                </span>
+            </p>
+            <blockquote>
+                <div class="lplh-29" style="text-align: center;">
+                    <span style="color: rgb(36, 53, 84);">
+                        <span style="font-size: 18px;">
+                            <span style="font-family: lato;">
+                                Discuss your options with <span style="font-family: lato;">one of our attorneys</span>.
+                            </span>
+                        </span>
+                    </span>
+                </div>
+            </blockquote>
+            <div>
+                <span style="color: rgb(36, 53, 84);">&nbsp;</span>
+            </div>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-28">
+            <div class="lplh-29" style="text-align: center;">
+                <span style="font-size:22px;">
+                    <span style="color: rgb(110, 110, 110);">
+                        <strong>
+                            <span style="font-family: merriweather;">Together we will get through this</span>
+                        </strong>
+                    </span>
+                </span>
+            </div>
+            <blockquote>
+                <div class="lplh-22" style="text-align: center;">
+                    <span style="color: rgb(110, 110, 110);">
+                        <span style="font-size: 18px;">
+                            <span style="font-family: lato;">Our community businesses are facing never before seen challenges, but don't go it alone. We are here to help.</span>
+                        </span>
+                    </span>
+                </div>
+            </blockquote>
+            <div>
+                <span style="color: rgb(110, 110, 110);">&nbsp;</span>
+            </div>
+        </div>
+        <div class="lp-element lp-pom-text" id="lp-pom-text-01">
+            <p style="line-height: 32px;">
+                <span style="font-family: merriweather; font-size: 26px; color: rgb(36, 53, 84);">
+                    <strong>Frequently Asked Questions</strong>
+                </span>
+            </p>
+            <p style="line-height: 32px;">
+                <span style="font-size: 21px;">
+                    <span style="font-style: normal;">
+                        <span style="font-weight: 400;">
+                            <span style="font-family: Lato;"><NavLink class="faq-question" @onclick="ContactSrc">How did we get your name?</NavLink></span>
+                        </span>
+                    </span>
+                </span>
+            </p>
+            <p style="line-height: 32px;">
+                <span style="font-size: 21px;">
+                    <span style="font-style: normal;">
+                        <span style="font-weight: 400;">
+                            <span style="font-family: Lato;"><NavLink class="faq-question" @onclick="WhoWeAre">Who We Are (The Legal Assist Group) and the Attorneys Involved?</NavLink></span>
+                        </span>
+                    </span>
+                </span>
+            </p>
+            <p style="line-height: 32px;">
+                <span style="font-size: 21px;">
+                    <span style="font-style: normal;">
+                        <span style="font-weight: 400;">
+                            <span style="font-family: Lato;"><NavLink class="faq-question" @onclick="Cost">Does this cost anything?</NavLink></span>
+                        </span>
+                    </span>
+                </span>
+            </p>
+            <p style="font-size:16px; line-height:23px; font-family:Lato">If you have questions or are unsure or need assistance, we are ready to help you through the process and you may contact us by replying to any of our texts or emails you may receive when you begin your free claim review.
+            <br />
+            <br />Thank You
+            <br />The Legal Assist Group
+            </p>
+        </div>
+        <div class="lp-element lp-pom-image" id="lp-pom-image-162" style="display:none;">
+            <div class="lp-pom-image-container" style="overflow: hidden;">
+                <img class="lazyload" data-src="/images/b536c6be-breaking-news_107e01o000000000000028.png" />
+            </div>
+        </div>
+        <div class="lp-element lp-pom-box" id="lp-pom-box-159" style="display:none;">
+            <div id="lp-pom-box-159-color-overlay"></div>
+            <div class="lp-element lp-pom-text nlh" id="lp-pom-text-160">
+                <h1 itemprop="headline" style="text-align: center; line-height: 32px;">
+                    <span style="color: rgb(255, 255, 255); font-size: 26px;">More than 4 million people woke up without power in Texas amid record low temperatures.</span>
+                </h1>
+            </div>
+            <div class="lp-element lp-pom-text nlh" id="lp-pom-text-161">
+                <p style="line-height: 26px;">
+                    <span style="font-size: 18px; color: rgb(0, 0, 0);">
+                        <a href="clkn/https/www.cnn.com/2019/05/13/health/monsanto-roundup-cancer-verdict-bn/index.html"></a>
+                    </span>
+                    <span style="font-size: 18px; color: rgb(255, 255, 255);">More than 4.4 million people were without power in Texas as record-low temperatures brought a demand for power that the state's electric grid could not keep up with.</span>
+                    <br />
+                    <span style="font-size: 18px; color: rgb(255, 255, 255);">At least 25 people have died from weather-related causes so far, most of them in Texas, as the storm blanketed large swaths of the country.&nbsp;</span>
+                </p>
+            </div>
+        </div>
+        <div class="lp-element lp-pom-box" id="lp-pom-box-43">
+            <div id="lp-pom-box-43-color-overlay"></div>
+            <div class="lp-element lp-pom-image" id="lp-pom-image-17">
+                <div class="lp-pom-image-container" style="overflow: hidden;">
+                    <img class="lazyload" data-src="/images/38f0kd-education-placement_1000000000000000000028.png" />
+                </div>
+            </div>
+            <div class="lp-element lp-pom-box" id="lp-pom-box-32">
+                <div id="lp-pom-box-32-color-overlay"></div>
+            </div>
+            <div class="lp-element lp-pom-box" id="lp-pom-box-37">
+                <div id="lp-pom-box-37-color-overlay"></div>
+            </div>
+        </div>
+        <div class="lp-element lp-pom-box" id="lp-pom-box-44">
+            <div id="lp-pom-box-44-color-overlay"></div>
+            <div class="lp-element lp-pom-box" id="lp-pom-box-33">
+                <div id="lp-pom-box-33-color-overlay"></div>
+            </div>
+            <div class="lp-element lp-pom-box" id="lp-pom-box-34">
+                <div id="lp-pom-box-34-color-overlay"></div>
+            </div>
+            <div class="lp-element lp-pom-image" id="lp-pom-image-121">
+                <div class="lp-pom-image-container" style="overflow: hidden;">
+                    <img class="lazyload" data-srcset="
+                            /images/05194593-handshack-icon_102z02z000000000000028.png 107w, 
+                            /images/05194593-handshack-icon_105y05y000000000000028.png 214w, 
+                            /images/05194593-handshack-icon_1000000000000000000028.png 260w" />
+                </div>
+            </div>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-74">
+            <p style="line-height: 32px;">
+                <span style="font-family: merriweather; font-size: 26px; color: rgb(36, 53, 84);">
+                    <strong>Will Texas Grid Manager ERCOT Face Class Actions Over Power Outages?</strong>
+                </span>
+            </p>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-75">
+            <p style="line-height: 29px;">
+                <span style="font-family: Merriweather; font-size: 20px; color: rgb(255, 255, 255);">
+                    <span style="font-weight: 400; font-style: normal;">
+                        <span style="font-size: 25px;">
+                            <span style="color: rgb(255, 255, 255);">W</span>
+                        </span>
+                    </span>
+                    <span style="font-weight: 400; font-style: normal;">
+                        <span style="font-size: 25px;">
+                            <span style="color: rgb(255, 255, 255);">e will stand with you.</span>
+                        </span>
+                    </span>
+                </span>
+            </p>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-104">
+            <p style="line-height: 38px;">
+                <span style="font-size: 32px;">
+                    <strong>
+                        <strong>
+                            <span style="color: rgb(110, 110, 110); font-family: &quot;Open Sans&quot;; font-weight: 700; font-style: normal;">LET US HELP YOU PURSUE COMPENSATION.</span>
+                        </strong>
+                    </strong>
+                </span>
+            </p>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-105">
+            <p style="line-height: 29px;">
+                <span style="font-size: 18px;">
+                    <span style="color: rgb(110, 110, 110); font-family: &quot;Open Sans&quot;; font-weight: 400; font-style: normal;">
+                        We are dedicated to
+                        holding electric and natural gas companies accountable for providing the services their
+                        customers have paid for. Our success against
+                        many of the nation’s largest power companies, along with our dedication
+                        to our clients and their families, means these companies often
+                        choose to settle with us rather than face our team at trial.
+                    </span>
+                </span>
+            </p>
+        </div>
+        <div class="lp-element lp-pom-image" id="lp-pom-image-106">
+            <div class="lp-pom-image-container" style="overflow: hidden;">
+                <img class="lazyload" data-srcset="
+                        /images/6jk58i-1523906956-26600351-402x204x402x268x0x32-agreement-handshack-_108n04e00000000000001o.jpg 311w, 
+                        /images/6jk58i-1523906956-26600351-402x204x402x268x0x32-agreement-handshack-_100000000000000000001o.jpg 402w,
+                        /images/6jk58i-1523906956-26600351-402x204x402x268x0x32-agreement-handshack-_107v03z00000000000001o.jpg 283w" />
+            </div>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-139">
+            <p style="line-height: 29px;">
+                <span style="font-size: 18px;">
+                    <span style="color: rgb(141, 20, 53);">
+                        <span style="font-family: &quot;Open Sans&quot;; font-weight: 400; font-style: normal;">
+                            <strong>See if you qualify today.</strong>
+                        </span>
+                    </span>
+                </span>
+            </p>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-110">
+            <p style="line-height: 38px;">
+                <span style="font-size: 28px;">
+                    <strong>
+                        <strong>
+                            <span style="color: rgb(255, 255, 255); font-family: &quot;Open Sans&quot;; font-weight: 700; font-style: normal;">Millions of people without power in Texas during this arctic blast is life-threatening, unacceptable and may be legally wrong.</span>
+                        </strong>
+                    </strong>
+                </span>
+            </p>
+        </div>
+        <div class="lp-element lp-pom-box" id="lp-pom-box-111">
+            <div id="lp-pom-box-111-color-overlay"></div>
+        </div>
+        <div class="lp-element lp-pom-image" id="lp-pom-image-125">
+            <div class="lp-pom-image-container" style="overflow: hidden;">
+                <img class="lazyload" data-srcset="
+                        /images/92e83a42-adobestock-302552675_10bi07o00000000000001o.jpg 414w,
+                        /images/92e83a42-adobestock-302552675_10g80au00000000000001o.jpg 584w,
+                        /images/92e83a42-adobestock-302552675_10n00fc00000000000001o.jpg 828w,
+                        /images/92e83a42-adobestock-302552675_10oc0g900000000000001o.jpg 876w,
+                        /images/92e83a42-adobestock-302552675_10yi0n000000000000001o.jpg 1242w,
+                        /images/92e83a42-adobestock-302552675_108405f00000000000001o.jpg 292w" />
+            </div>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-127">
+            <p style="line-height: 32px;">
+                <span style="font-family: merriweather; font-size: 26px; color: rgb(36, 53, 84);">
+                    <strong>What Happened to the Texas Power Grid?</strong>
+                </span>
+            </p>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-128">
+            <p style="line-height: 38px;">
+                <span style="font-family: Lato; font-weight: 400; font-style: normal; font-size: 26px;">
+                    <span style="color: rgb(159, 75, 73);">The surge in demand sent wholesale energy prices skyrocketing, triggering ERCOT’s computers to cut off customers to avoid paying the higher prices, according to The Washington Post.</span>
+                </span>
+            </p>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-129">
+            <p style="line-height: 32px;">
+                <span style="font-size: 21px;">
+                    <span style="font-style: normal;">
+                        <span style="font-weight: 400;">
+                            <span style="font-family: Lato;">Roughly 3 million people in Texas have had to deal with outages as power generators and natural gas pipes froze, crippling the state's production capabilities. This led the Electric Reliability Council of Texas (ERCOT), which manages the state's power grid, to administer rolling blackouts to avoid a grid failure.</span>
+                        </span>
+                    </span>
+                </span>
+                <br />
+                <br />
+                <span style="font-size: 21px;">
+                    <span style="font-style: normal;">
+                        <span style="font-weight: 400;">
+                            <span style="font-family: Lato;">
+                                The cold front that swept across Texas brought with it two to nine inches of snow and ice, according to The Houston Chronicle. <br /><br />Unlike other states, Texas power operates its own power grid managed by nonprofit Electric Reliability Council of Texas (ERCOT), which provides about 90 percent of Texas’ power, Vox reports.
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </p>
+        </div>
+        <div class="lp-element lp-pom-image" id="lp-pom-image-141">
+            <div class="lp-pom-image-container" style="overflow: hidden;">
+                <img class="lazyload" data-srcset="
+                        /images/259f008a-7000796835-060e668f5d-c_10fe0c200000000000001o.jpg 554w,
+                        /images/259f008a-7000796835-060e668f5d-c_10hc0do00000000000001o.jpg 624w,
+                        /images/259f008a-7000796835-060e668f5d-c_107p06100000000000001o.jpg 277w,
+                        /images/259f008a-7000796835-060e668f5d-c_108o06u00000000000001o.jpg 312w,
+                        /images/259f008a-7000796835-060e668f5d-c_100000000000000000001o.jpg 750w" />
+            </div>
+        </div>
+        <div class="lp-element lp-pom-image" id="lp-pom-image-142">
+            <div class="lp-pom-image-container" style="overflow: hidden;">
+                <img class="lazyload" data-srcset="
+                        /images/14af679d-adobestock-408800876_10ae07400000000000001o.jpg 374w,
+                        /images/14af679d-adobestock-408800876_10g40b000000000000001o.jpg 580w,
+                        /images/14af679d-adobestock-408800876_10ks0e800000000000001o.jpg 748w,
+                        /images/14af679d-adobestock-408800876_10o60gi00000000000001o.jpg 870w,
+                        /images/14af679d-adobestock-408800876_10v60lc00000000000001o.jpg 1122w,
+                        /images/14af679d-adobestock-408800876_108205i00000000000001o.jpg 290w" />
+            </div>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-169">
+            <p style="line-height: 32px;">
+                <span style="font-weight: 400; font-family: Lato; font-size: 21px;">Most of that power comes from natural gas. When the winter storm rolled through, natural gas pipelines were clogged by ice or disabled by losing power, and demand spiked at the same time. Because the Texas grid isn’t linked to a national one, it was unable to import extra power, according to the Washington Post.</span>
+            </p>
+        </div>
+        <div class="lp-element lp-pom-image" id="lp-pom-image-170">
+            <div class="lp-pom-image-container" style="overflow: hidden;">
+                <img class="lazyload" data-srcset="
+                        /images/a862fa93-screenshot-2021-02-22-13-19-51_10gu0c000000000000001o.jpg 606w,
+                        /images/a862fa93-screenshot-2021-02-22-13-19-51_10p90i000000000000001o.jpg 909w,
+                        /images/a862fa93-screenshot-2021-02-22-13-19-51_108f06000000000000001o.jpg 303w" />
+            </div>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-171">
+            <p style="line-height: 32px;">
+                <span style="font-weight: 400; font-family: Lato; font-size: 21px;">
+                    <span style="font-weight: 400; font-family: Lato; font-size: 21px;">Critics, including certain Texas leaders, claim ERCOT wasn’t prepared despite knowing the storm was coming and hasn’t invested enough in weather-proofing infrastructure.&nbsp;</span>
+                </span>
+            </p>
+        </div>
+        <div class="lp-element lp-pom-box" id="lp-pom-box-176">
+            <div id="lp-pom-box-176-color-overlay"></div>
+            <div class="lp-element lp-pom-text nlh" id="lp-pom-text-177">
+                <div class="lplh-77" style="line-height: 45px; text-align: center;">
+                    <span style="color: rgb(255, 255, 255); font-family: merriweather;">
+                        <span style="font-size: 34px;">Texas Freeze & Power Failure</span>
+                    </span>
+                </div>
+                <p>
+                    <br />
+                </p>
+            </div>
+            <div class="lp-element lp-pom-box" id="lp-pom-box-178">
+                <div id="lp-pom-box-178-color-overlay"></div>
+            </div>
+            <div class="lp-element lp-pom-text nlh" id="lp-pom-text-179">
+                <div class="lplh-32" style="line-height: 22px; text-align: center;">
+                    <span style="font-size: 14px;">
+                        <span style="font-family:merriweather;">
+                            <span style="color: rgb(255, 247, 136);">Hundreds of thousands of Texans are making Claims for an Additional Recovery.<br /><br />We will assist you to file a claim and get you fair compensation</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="lp-element lp-pom-box" id="lp-pom-box-180">
+                <div id="lp-pom-box-180-color-overlay"></div>
+                <div class="lp-element lp-pom-image" id="lp-pom-image-181">
+                    <div class="lp-pom-image-container" style="overflow: hidden;">
+                        <img class="lazyload" data-src="/images/b4a176e1-tx-animated5.gif" />
+                    </div>
+                </div>
+            </div>
+            <div class="lp-element lp-pom-text nlh" id="lp-pom-text-187">
+                <div class="lplh-77" style="line-height: 45px; text-align: center;">
+                    <span style="color: rgb(255, 255, 255); font-family: merriweather;">
+                        <span style="font-size: 28px;"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-184">
+            <p style="text-align: center;">
+                <span style="color: rgb(255, 255, 255);">
+                    By filling out the form above, I agree to receive telephone calls and text messages at the telephone number provided above/below (including any mobile number provided) by our law firm. I understand that consent to receiving phone calls and/or text is not a condition to the formation of an attorney-client relationship.
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="lp-element lp-pom-block" id="lp-pom-block-8">
+        <div id="lp-pom-block-8-color-overlay"></div>
+        <div class="lp-pom-block-content"></div>
+    </div>
+    <div class="lp-element lp-pom-block" id="lp-pom-block-158">
+        <div id="lp-pom-block-158-color-overlay"></div>
+        <div class="lp-pom-block-content"></div>
+    </div>
+    <div class="lp-element lp-pom-block" id="lp-pom-block-126">
+        <div id="lp-pom-block-126-color-overlay"></div>
+        <div class="lp-pom-block-content"></div>
+    </div>
+    <div class="lp-element lp-pom-block" id="lp-pom-block-9">
+        <div id="lp-pom-block-9-color-overlay"></div>
+        <div class="lp-pom-block-content"></div>
+    </div>
+    <div class="lp-element lp-pom-block" id="lp-pom-block-116">
+        <div id="lp-pom-block-116-color-overlay"></div>
+        <div class="lp-pom-block-content"></div>
+    </div>
+    <div class="lp-element lp-pom-block" id="lp-pom-block-72">
+        <div id="lp-pom-block-72-color-overlay"></div>
+        <div class="lp-pom-block-content"></div>
+    </div>
+    <div class="lp-element lp-pom-block" id="lp-pom-block-103">
+        <div id="lp-pom-block-103-color-overlay"></div>
+        <div class="lp-pom-block-content"></div>
+    </div>
+    <div class="lp-element lp-pom-block" id="lp-pom-block-183">
+        <div id="lp-pom-block-183-color-overlay"></div>
+        <div class="lp-pom-block-content"></div>
+    </div>
+</div>
