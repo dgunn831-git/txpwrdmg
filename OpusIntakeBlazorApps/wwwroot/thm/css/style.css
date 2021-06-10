@@ -2939,3 +2939,8 @@ a {
 .hide{
     display: none;
 }
+
+.info-block-left {
+    width: 142px;
+    display: inline-block;
+}
