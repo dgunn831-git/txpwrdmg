@@ -1,0 +1,13 @@
+body{
+	background-color: #090643;
+}
+li{
+	margin-bottom: 10px;
+}
+.hide{
+	display:none;
+}
+.event-full{
+	color:crimson;
+	font-weight:bold;
+}

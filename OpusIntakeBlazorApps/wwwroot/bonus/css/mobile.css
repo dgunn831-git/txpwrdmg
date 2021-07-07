@@ -1,0 +1,34 @@
+@media only screen and (max-width: 600px) {
+	#main-dialog{
+		width:300px;
+	}
+	#header{
+		min-width: 370px;
+		height: 160px;
+		flex-direction: column;
+	}
+	#head-logo{
+		width: 225px;
+    	margin: auto;
+    	display: block!important;	
+	}
+	#head-title {
+		font-size: 21px;
+		font-weight: bold;
+		vertical-align: middle;
+		text-align: center;
+		display: block!important;
+		line-height: 22px;
+	}
+	#main-dialog{
+		margin-top: 135px;
+	}
+	.clipping {
+		background-color: white;
+		width: 75%;
+		border-radius: 8px;
+		padding: 20px;
+		max-width: 650px;
+		margin: 10px auto;
+	}
+}
