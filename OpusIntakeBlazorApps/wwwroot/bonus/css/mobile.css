@@ -31,4 +31,9 @@
 		max-width: 650px;
 		margin: 10px auto;
 	}
+	.title {
+		color: #1e1ebf;
+		font-size: 1.25rem;
+		margin-top: 10px;
+	}
 }
