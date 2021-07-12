@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Texas Power Failure</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+	<style type="text/css">
+		h4 {
+			font-style: italic;
+		}
+
+		.close a {
+			font-family: monospace;
+			font-weight: 600;
+			font-size: 19px;
+			text-decoration: none;
+			color: black;
+			border: 1px solid #b9b9b9;
+			border-radius: 40px;
+			padding: 0px 9px;
+		}
+	</style>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script>
+
+		var calcHeight = function () {
+			var f = $('#preview-frame');
+			var w = f.width();
+			var h = w * .55;
+			$('#preview-frame').height(h);
+
+		}
+
+		$(document).ready(function () {
+
+			calcHeight();
+
+		});
+
+		$(window).resize(function () {
+
+			calcHeight();
+
+		});
+	</script>
+	<link href="css/app.css" rel="stylesheet" />
+	<link href="css/desktop.css" rel="stylesheet" />
+	<link href="css/mobile.css" rel="stylesheet" />
+</head>
+<body id="main_body" class="d-flex flex-column justify-content-center">
+	<div id="header" class="d-flex p-2 justify-content-center" style="position:relative;">
+		<div class="p-2" id="head-logo"><img src="images/legal_assist_logo.png" width="224" height="71" class="lag-logo img-fluid rounded" /></div>
+		<div class="p-2 text-white" id="head-title">Texas Freeze<br /> Power Failure</div>
+	</div>
+	<div class="d-flex flex-column clipping">
+		<div class="d-flex flex-row-reverse close mb-3"><a href="javascript:window.close();">X</a></div>
+		<video id="preview-frame" controls=controls autoplay=autoplay>
+			<source src="https://opuscloudstore.blob.core.windows.net/app-files/BCA-StuckAtQ-EyeForm-03.mp4" type="video/mp4" />
+		</video>
+		<h6 class="title">What is this video about?</h6>
+		<p>
+			This short video answers common questions about the process of 'qualifying' and the purpose of information collection to submit a claim – as provided by the Legal Assist Group and the Law Firms involved.
+		</p>
+	</div>
+</body>
+</html>
