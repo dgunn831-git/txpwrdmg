@@ -11,3 +11,10 @@ li{
 	color:crimson;
 	font-weight:bold;
 }
+button {
+	border-radius: 5px;
+	font-size: .75rem;
+}
+ul {
+	list-style: none;
+}
