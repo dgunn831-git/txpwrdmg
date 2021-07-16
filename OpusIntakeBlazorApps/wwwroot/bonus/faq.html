@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Texas Power Failure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <style type="text/css">
+
+        h4 {
+            font-style: italic;
+        }
+
+        .close a {
+            font-family: monospace;
+            font-weight: 600;
+            font-size: 19px;
+            text-decoration: none;
+            color: black;
+            border: 1px solid #b9b9b9;
+            border-radius: 40px;
+            padding: 0px 9px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+        var calcHeight = function () {
+            var f = $('#preview-frame');
+            var w = f.width();
+            var h = w * .55;
+            $('#preview-frame').height(h);
+
+        }
+
+        $(document).ready(function () {
+
+            calcHeight();
+
+        });
+
+        $(window).resize(function () {
+
+            calcHeight();
+
+        });
+    </script>
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
+    <link href="css/desktop.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="main_body" class="d-flex flex-column justify-content-center">
+    <div id="header" class="d-flex p-2 justify-content-center" style="position:relative;">
+        <div class="p-2" id="head-logo"><img src="images/legal_assist_logo.png" width="224" height="71" class="lag-logo img-fluid rounded" alt="Legal Assist Group" /></div>
+        <div class="p-2 text-white" id="head-title">Texas Freeze<br /> Power Failure</div>
+    </div>
+    <div class="d-flex flex-column clipping">
+        <h1>Video FAQs</h1>
+        <p>Click on a question below to open the video on that topic.</p>
+        <ul>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="GXWN3Dj4e5I">Why sign up now?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="ybKumSSGSsg">Why should I file a claim?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="tWaRwKhTHmo">Working with Legal Assist Group</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="lW1BDmsM2qo">How do the legal fees work?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="5-2sV-jDkpo">Why should I use your public adjuster?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="X1ydjXXjLX4">Who is responsible?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="X5HK3-k1zr8">Who is Brent Coon?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="vChzDlzfWqg">What type of claims can I make?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="g9uFpK6JvUE">What about lost wages?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="rpNBr3w05po">What about my utility bills?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="qnl6LVEumLo">Is my claim too small?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="JfnmhHsCigI">How much will I get?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="oTvswGCrSls">Are there any conflicts with my insurance or FEMA?</button></li>
+            <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="8fQW_uKLSW8">Will this affect my insurance claim?</button></li>
+        </ul>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="mc">
+                <div class="modal-header justify-content-between">
+                    <div id="modal-title">Title</div>
+                    <div>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#myModal">
+                            close
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body" id="player"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#myModal').on('hidden.bs.modal', function () {
+                $('#player').empty();
+            });
+
+            $('#myModal').on('show.bs.modal', function (event) {
+                let button = event.relatedTarget;
+                let id = button.getAttribute('data-bs-vid');
+                
+                $("#modal-title").html(button.textContent);
+                let embedCode = "<iframe width='480' height='320' src='https://www.youtube.com/embed/" + id + "' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+                $("#player").html(embedCode);
+            });
+        });
+
+        function loadVideo(id) {
+            myVideoId = id;
+            var embedCode = "<iframe width='480' height='320' src='https://www.youtube.com/embed/" + id + "' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+            $("#player").html(embedCode);
+            var m = $(".modal-dialog");
+            $("#myModal").modal();
+        }
+    </script>
+</body>
+</html>

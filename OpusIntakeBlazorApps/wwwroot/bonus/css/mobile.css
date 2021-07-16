@@ -36,4 +36,10 @@
 		font-size: 1.25rem;
 		margin-top: 10px;
 	}
+	ul{
+		padding:0px;
+	}
+	li{
+		text-align: center;
+	}
 }
