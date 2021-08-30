@@ -70,6 +70,10 @@
             <li><button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-vid="TexasFreezeTownHall-Robbins-0321-FAQ-01-InsuranceClaims.mp4">Will this affect my insurance claim?</button></li>
         </ul>
     </div>
+    <div class="d-flex justify-content-between container" style="width:75%;margin-bottom:10px auto;color:white;max-width:650px;">
+        <div class="col p-0"><a href="/disclaimer.html" target="_blank" style="color:white;">Disclaimer</a></div>
+        <div style="text-align:right;"> © 2021  Legal Assist Group</div>
+    </div>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content" id="mc">
@@ -94,9 +98,9 @@
             $('#myModal').on('show.bs.modal', function (event) {
                 let button = event.relatedTarget;
                 let id = button.getAttribute('data-bs-vid');
-                
+
                 $("#modal-title").html(button.textContent);
-                let embedCode = "<video width='100%' controls=controls autoplay=autoplay><source src='https://opuscloudstore.blob.core.windows.net/app-files/"+ id +"' type='video/mp4' /></video>";
+                let embedCode = "<video width='100%' controls=controls autoplay=autoplay><source src='https://opuscloudstore.blob.core.windows.net/app-files/" + id + "' type='video/mp4' /></video>";
 
                 $("#player").html(embedCode);
             });
